@@ -1,0 +1,9 @@
+services:
+  qnap-telegram-bot:
+    container_name: qnap-telegram-bot
+    image: jiz4oh/qnap-telegram-bot
+    build:
+      context: .
+    env_file:
+      - .env
+    restart: 'unless-stopped'

@@ -1,0 +1,20 @@
+# Ignore node_modules directory
+node_modules
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+
+# Ignore Dockerfile itself (if it's in the build context for some reason)
+Dockerfile
+
+# Ignore all .env files
+.env
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+.venv/

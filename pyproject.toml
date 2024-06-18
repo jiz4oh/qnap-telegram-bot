@@ -5,7 +5,11 @@ description = "Default template for PDM package"
 authors = [
     {name = "jiz4oh", email = "me@jiz4oh.com"},
 ]
-dependencies = []
+dependencies = [
+    "python-telegram-bot>=21.3",
+    "requests>=2.32.3",
+    "python-dotenv>=1.0.1",
+]
 requires-python = "==3.12.*"
 readme = "README.md"
 license = {text = "MIT"}

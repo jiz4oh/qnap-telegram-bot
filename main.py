@@ -29,6 +29,8 @@ ADD_TASK_URL = f"{QNAP_BASE_URL}/downloadstation/V4/Task/AddUrl"
 
 USERNAME = os.getenv("USERNAME")
 PASSWORD = os.getenv("PASSWORD")
+if not PASSWORD:
+    raise ValueError("No PASSWORD found in environment variables")
 encoded_bytes = base64.b64encode(PASSWORD.encode("utf-8"))
 ENCODED_PASSWORD = encoded_bytes.decode("utf-8")
 
